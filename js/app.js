@@ -12,8 +12,6 @@
  const $container =  $('#container');
 
 
- console.log($container);
-
  const $h1 = $('<h1>Hogwarts</h1>');
  $container.append($h1);
 
@@ -32,6 +30,24 @@
  $container.append($h4_2);
 
 
+ const $ul = $('<ul>trunk</ul>');
+ $container.append($ul);
+
+ const $li = $('<li>butter beer</li>');
+
+ const $li2 = $('<li>invisibility cloak</li>');
+ $li2.addClass('secret');
+
+ const $li3 = $('<li>time turner</li>');
+ $li3.addClass('secret');
+
+ const $li4 = $('<li>leash</li>');
+
+ const $li5 = $('<li>Bertie Botts Every Flavor Beans</li>');
+
+ const $li6 = $('<li>magic map</li>')
+ $li6.addClass('secret');
+ $ul.append($li, $li2, $li3, $li4, $li5, $li6);
 
 
 
