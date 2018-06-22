@@ -20,7 +20,7 @@
  $container.append($h3);
 
  const $h4 = $('<h4>Kurt Russell</h4>');
- $h4.addClass('Badass');
+ $h4.addClass('badass');
  $container.append($h4);
 
  const $h4_2 = $('<h4>Wand</h4>');
@@ -56,30 +56,47 @@
 
 
 const $h5 = $('<h5>Spring 2017</h5>');
-$body.append($h5);
+$container.append($h5);
 
 const $table = $('<table></table>');
-
 const $thead = $('<thead></thead>');
+$table.append($thead);
+
 const $th = $('<th>Day</th>');
 const $th2 = $('<th>Classes</th>');
+$thead.append($th, $th2);
 
-const $tr = $('<tr>Schedule</tr>');
+const $tr = $('<tr></tr>');
+$table.append($tr);
 const $td = $('<td>Monday</td>');
 const $td2 = $('<td>Herbology, Defense Against the Dark Arts, Quidditch practice</td>');
+$tr.append($td, $td2);
+
+const $tr2 = $('<tr></tr>');
+$table.append($tr2);
 const $td3 = $('<td>Tuesday</td>');
 const $td4 = $('<td>Divination</td>');
+$tr.append($td3, $td4);
+
+const $tr3 = $('<tr></tr>');
+$table.append($tr3);
 const $td5 = $('<td>Wednesday</td>');
 const $td6 = $('<td>History of Magic Charms</td>');
+$tr.append($td5, $td6);
+
+const $tr4 = $('<tr></tr>');
+$table.append($tr4);
 const $td7 = $('<td>Thursday</td>');
 const $td8 = $('<td>Potions</td>');
+$tr.append($td7, $td8);
+
+const $tr5 = $('<tr></tr>');
+$table.append($tr5);
 const $td9 = $('<td>Friday</td>');
 const $td0 = $('<td>Transfiguration');
+$tr.append($td9, $td0);
 
-$table.append($thead);
-$thead.append($th, $th2);
-$tr.append($td, $td2, $td3, $td4, $td5, $td6, $td7, $td8, $td9, $td0);
-$body.append($table);
+$container.append($table);
 
 
 
