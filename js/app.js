@@ -32,6 +32,7 @@
 
  const $ul = $('<ul>trunk</ul>');
  $container.append($ul);
+ // How do I add attribute of "storage"
 
  const $li = $('<li>butter beer</li>');
 
@@ -42,18 +43,40 @@
  $li3.addClass('secret');
 
  const $li4 = $('<li>leash</li>');
+ li4.addClass('Badass');
 
  const $li5 = $('<li>Bertie Botts Every Flavor Beans</li>');
 
- const $li6 = $('<li>magic map</li>')
+ const $li6 = $('<li>magic map</li>');
  $li6.addClass('secret');
  $ul.append($li, $li2, $li3, $li4, $li5, $li6);
 
 
 
+const $h5 = $('<h5>Spring 2017</h5>');
+$body.append($h5);
 
+const $table = $('<table></table>');
 
+const $thead = $('<thead></thead>');
+const $th = $('<th>Day</th>');
+const $th2 = $('<th>Classes</th>');
 
+const $tr = $('<tr></tr>');
+const $td = $('<td>Monday</td>');
+const $td2 = $('<td>Herbology, Defense Against the Dark Arts, Quidditch practice</td>');
+const $td3 = $('<td>Tuesday</td>');
+const $td4 = $('<td>Divination</td>');
+const $td5 = $('<td>Wednesday</td>');
+const $td6 = $('<td>History of Magic Charms</td>');
+const $td7 = $('<td>Thursday</td>');
+const $td8 = $('<td>Potions</td>');
+const $td9 = $('<td>Friday</td>');
+const $td0 = $('<td>Transfiguration');
+
+$table.append($thead);
+$thead.append($th, $th2);
+$tr.append($td, $td2, $td3, $td4, $td5, $td6, $td7, $td8, $td9, $td0);
 
 
 
